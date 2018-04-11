@@ -12,17 +12,15 @@ public class MemoryManagementSystem{
 	 
 	public MemoryManagementSystem(int mainMemorySize, int secondaryMemorySize, boolean useLRU) {
 		this.secondaryMemory=new String[secondaryMemorySize];
-		for (String s : secondaryMemory) {
-			s="";
+		for (int i = 0; i < secondaryMemory.length; i++) {
+			 secondaryMemory[i]="";
+			
 		}
 		this.useLRU=useLRU;
 		// this.MainMemo=new MainMemo(mainMemorySize);  need to add constractot 
 	}
 
-	private void foreach() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	@Override
 	public String toString() {
